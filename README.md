@@ -60,15 +60,12 @@
 
 **Диаграмма архитектуры**
 
-![Screenshot 2024-08-24 185027](https://github.com/user-attachments/assets/79e010c4-070d-466d-af35-765078c1b7b3)
 
 **CI-CD конвейер**
 
-![image](https://github.com/user-attachments/assets/a1a7711d-de4d-4b4e-a4b5-fa1cfe439a55)
 
 **Развертывание на Docker**
 
-![Screenshot 2024-08-23 191148](https://github.com/user-attachments/assets/109d76c0-a33f-4253-89e2-51639c9e0d27)
 
 ## 2. Инструменты и технологии
 
@@ -92,7 +89,6 @@
 2. Запустите установщик и следуйте инструкциям на экране для завершения установки.
 3. Откройте Jenkins в веб-браузере по адресу `http://localhost:8080` и следуйте инструкциям для получения первоначального пароля администратора.
 
-![image](https://github.com/user-attachments/assets/d72069b7-260f-4b67-a1b6-22a602c675d0)
 
 ### Установка Docker
 
@@ -101,7 +97,6 @@
 3. После установки откройте Docker Desktop и убедитесь, что он работает.
 4. В конце этого документа я описал возникшие проблемы и их возможные решения.
 
-![image](https://github.com/user-attachments/assets/32d1de70-0f5f-4aae-85a9-fac1ced91904)
 
 ### Установка необходимых плагинов Jenkins
 
@@ -113,7 +108,6 @@
    - **Pipeline**
 4. После установки перезапустите Jenkins, чтобы плагины загрузились.
 
-![image](https://github.com/user-attachments/assets/d72efb2a-451e-4bbc-9f48-1787b6aa0ad0)
 
 ## 4. Структура микросервисов
 
@@ -122,27 +116,22 @@
   - Инициализировал его с файлом `README.md`.
   - Склонировал его на локальную машину, используя Git.
 
-![image](https://github.com/user-attachments/assets/bd683bd4-a0a5-4a0e-bb05-b27b754a59a6)
 
 - **Фронтенд сервис (HTML, CSS, JavaScript)**
   - Разработал адаптивный фронтенд, используя HTML, CSS и JavaScript.
   - Фронтенд подключается к бэкенд сервису через RESTful API.
 
-![image](https://github.com/user-attachments/assets/8e435aca-c8da-49b4-9747-fa03b85e1bce)
 
 - **Бэкенд сервис (Node.js)**
   - Создал бэкенд сервис с использованием Node.js и Express для обработки API запросов.
   - Бэкенд обрабатывает данные и взаимодействует с фронтендом.
 
-![image](https://github.com/user-attachments/assets/e0fe9b76-3bcd-427e-8e40-96472e41fa02)
-![image](https://github.com/user-attachments/assets/36ae324d-99c3-445c-b888-5a6eae8c5d1e)
 
 - **Финальные изменения и отправка в GitHub**
   - Зафиксировал финальные изменения в локальном Git репозитории с описательным сообщением.
   - Отправил зафиксированные изменения в GitHub репозиторий, убедившись, что последние обновления отражены.
   - Обновил файл README с финальными деталями проекта, включая шаги, скриншоты и результаты.
 
-![image](https://github.com/user-attachments/assets/0ff6c5b8-67d1-40d2-94dd-c803b2244307)
 
 ## 5. Реализация CI/CD конвейера
 
@@ -150,17 +139,13 @@
   - Настроил Jenkins для непрерывной интеграции и развертывания.
   - Запускал процесс сборки с помощью Poll SCM и при каждом изменении в GitHub репозитории.
 
-    ![image](https://github.com/user-attachments/assets/cb674546-3314-4f3f-a912-86d76054b2f1)
-
   - Настроил Jenkins на Docker для автоматизации процессов сборки, тестирования и развертывания.
 
-![image](https://github.com/user-attachments/assets/96a035e6-7677-4427-8c8b-4f55fc45abdd)
 
 - **Автоматизация процесса с Jenkinsfile**
   - Создал Jenkinsfile для определения этапов конвейера: Checkout, Build, Test и Deploy.
   - Интегрировал Jenkins с GitHub для запуска сборок при коммитах кода.
 
-![image](https://github.com/user-attachments/assets/e4ac58d1-e364-4570-91f4-e2ea225d386a)
 
 - **Интеграция Docker**
   - Контейнеризировал как фронтенд, так и бэкенд сервисы для обеспечения единообразной среды разработки и тестирования.
@@ -175,7 +160,6 @@
 
 Вот как я использовал `unittest` для тестирования бэкенд микросервиса:
 
-![image](https://github.com/user-attachments/assets/b61c4a8d-f734-4b44-9a52-cb4986fcfe43)
 
 Код доступен в папке Backend под именем `test_backend.py`.
 
